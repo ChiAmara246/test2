@@ -1,0 +1,14 @@
+header li{
+	text-decoration: none;
+	padding: 10px, 10px, 10px, 10px;
+}
+
+header nav ul{
+	display: flex;
+
+}
+
+header img{
+	height: 100px;
+	margin-left: 45%;
+}

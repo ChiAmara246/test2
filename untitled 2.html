@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Showcase</title>
+
+<style>
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#111;
+    margin:0;
+}
+
+.frameBox{
+    width:500px;
+    height:300px;
+    overflow:hidden;
+    position:relative;
+    border-radius:10px;
+}
+
+.imageTrack{
+    display:flex;
+    width:300%;
+    height:100%;
+    animation:moveImages 9s infinite;
+}
+
+.imageTrack img{
+    width:500px;
+    height:300px;
+    object-fit:cover;
+}
+
+@keyframes moveImages{
+    0%{transform:translateX(0);}
+    30%{transform:translateX(0);}
+
+    35%{transform:translateX(-500px);}
+    65%{transform:translateX(-500px);}
+
+    70%{transform:translateX(-1000px);}
+    100%{transform:translateX(-1000px);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="frameBox">
+    <div class="imageTrack">
+        <img src="https://picsum.photos/id/1015/500/300">
+        <img src="https://picsum.photos/id/1016/500/300">
+        <img src="https://picsum.photos/id/1018/500/300">
+    </div>
+</div>
+
+</body>
+</html>
